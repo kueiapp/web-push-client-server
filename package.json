@@ -1,0 +1,36 @@
+{
+	"name": "web-push-client-server",
+	"version": "0.0.1",
+	"description": "",
+	"main": "./build/index.js",
+	"scripts": {
+		"serve": "tsc && node-dev -r esm ./dist/index.js",
+		"test": "node-dev -r esm ./dist/index.js",
+		"debug": "nodemon ./src_ts/index.ts",
+		"build": "tsc"
+	},
+	"keywords": [
+		"typescript",
+		"web-push",
+		"notification",
+		"node",
+		"express"
+	],
+	"author": "kueiapp.com",
+	"license": "ISC",
+	"devDependencies": {
+		"@types/body-parser": "1.17.0",
+		"@types/express": "4.17.0",
+		"@types/node": "12.0.8",
+		"esm": "3.2.25",
+		"nodemon": "1.19.1",
+		"ts-node": "8.3",
+		"typescript": "3.9.7",
+		"@types/web-push": "3.3.0"
+	},
+	"dependencies": {
+		"body-parse": "0.1.0",
+		"express": "4.17.1",
+		"web-push": "3.4.4"
+	}
+}
